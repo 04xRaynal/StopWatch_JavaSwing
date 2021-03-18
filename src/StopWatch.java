@@ -45,10 +45,24 @@ public class StopWatch extends JFrame implements ActionListener {
 	
 	
 	public StopWatch() {
+		try {   UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());   }
+		catch (ClassNotFoundException e) {}
+        catch (InstantiationException e) {}
+        catch (IllegalAccessException e) {}
+        catch (UnsupportedLookAndFeelException e) {}        //Refines the look of the ui
 		
 		hours = minutes = seconds = milliseconds = 0;
 		lastTickTime = runningTime = pausedTime = 0;
 		lapsedHours = lapsedMinutes = lapsedSeconds = 0;
+		
+		Image icon = Toolkit.getDefaultToolkit().getImage("clock-icon.png").getScaledInstance(60, 60, Image.SCALE_SMOOTH);
+		setIconImage(icon);
+		setTitle("StopWatch");
+		setLayout(null);
+		setSize(280, 400);
+		setVisible(true);
+		setResizable(false);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);				//Frame exit when close button is pressed
 		
 		SwingUtilities.invokeLater(new Runnable() {
 			
@@ -66,13 +80,6 @@ public class StopWatch extends JFrame implements ActionListener {
 	
 	
 	public void createAndShowGUI() {
-		try {   UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());   }
-		catch (ClassNotFoundException e) {}
-        catch (InstantiationException e) {}
-        catch (IllegalAccessException e) {}
-        catch (UnsupportedLookAndFeelException e) {}        //Refines the look of the ui
-		
-		
 		label = new JLabel();
 		changeLabel();
 		label.setBounds(40, 5, 250, 50);
@@ -125,16 +132,6 @@ public class StopWatch extends JFrame implements ActionListener {
 		scrollPane = new JScrollPane(timerList);										//ScrollPane holds the List
 		scrollPane.setBounds(13, 55, 238, 200);
 		add(scrollPane);
-		
-		
-		Image icon = Toolkit.getDefaultToolkit().getImage("clock-icon.png").getScaledInstance(60, 60, Image.SCALE_SMOOTH);
-		setIconImage(icon);
-		setTitle("StopWatch");
-		setLayout(null);
-		setSize(280, 400);
-		setVisible(true);
-		setResizable(false);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);				//Frame exit when close button is pressed
 	}
 	
 	

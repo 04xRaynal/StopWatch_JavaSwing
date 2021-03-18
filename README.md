@@ -7,4 +7,4 @@
 ---
 StopWatch
 
-![Capture_StopWatch.PNG](https://github.com/04xRaynal/StopWatch_JavaSwing/blob/5dfd571339cfd0089c8dde974376db7cee71e46e/Capture_StopWatch.PNG)
+![Capture_StopWatch.PNG](https://github.com/04xRaynal/StopWatch_JavaSwing/blob/fe0f681950577303469162eac202503f4b0679ae/Capture_StopWatch.PNG)

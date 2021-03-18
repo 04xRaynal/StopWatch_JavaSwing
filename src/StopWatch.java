@@ -171,7 +171,7 @@ public class StopWatch extends JFrame implements ActionListener {
 	
 	public void changeLabel() {
 		DecimalFormat formatter = new DecimalFormat("00");		
-		label.setText(formatter.format(hours) + " : " + formatter.format(minutes) + " : " + formatter.format(seconds) + " : " + formatter.format(milliseconds));
+		label.setText(formatter.format(hours) + " : " + formatter.format(minutes) + " : " + formatter.format(seconds) + " . " + formatter.format(milliseconds));
 	}
 	
 	

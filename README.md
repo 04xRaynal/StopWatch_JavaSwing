@@ -1,9 +1,18 @@
 # StopWatch with Lap Timer using Java Swing
 ***
-### A Java Swing Application which counts time when start is pressed, pause pauses the timer and reset resets it.
-#### The StopWatch is synchronized with the System Clock.
+
+Project Demo: [StopWatch](https://replit.com/@MajinVegetaSSJ2/StopWatch?v=1)
+
 ---
+
+### A Java Swing Application which counts time when start is pressed, pause pauses the timer and reset resets it.
+
+#### The StopWatch is synchronized with the System Clock.
+
+---
+
 ##### Also contains a Lap Timer Button which records timed sessions when pressed.
+
 ---
 StopWatch
 

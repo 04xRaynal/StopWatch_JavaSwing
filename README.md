@@ -1,8 +1,7 @@
 # StopWatch with Lap Timer using Java Swing
 ***
 
-Project Demo: <a href="https://replit.com/@MajinVegetaSSJ2/StopWatch?v=1" target="_blank">StopWatch</a>
-/*[StopWatch](https://replit.com/@MajinVegetaSSJ2/StopWatch?v=1)*/
+Project Demo: [StopWatch](https://replit.com/@MajinVegetaSSJ2/StopWatch?v=1)
 
 ---
 
